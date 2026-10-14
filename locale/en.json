@@ -1,0 +1,4 @@
+{
+  "title": "Mobile UI",
+  "description": "Adds a Desktop/Mobile layout switch to General settings. Mobile mode reflows the settings panel into a top, horizontally-scrollable category strip with full-width content below, fixing cramped options on phones."
+}

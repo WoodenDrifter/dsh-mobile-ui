@@ -1,0 +1,26 @@
+{
+  "name": "@local/dsh-mobile-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": ["locale/*.json", "icon.svg"],
+  "icon": "./icon.svg",
+  "meta": {
+    "title": "移动端界面",
+    "description": "移动端 UI 插件。当前提供通用设置中的「界面布局」桌面/移动开关；移动模式把设置面板左侧分类重排为顶部横向滑动条，内容铺满下方，解决手机端右侧选项拥挤。"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-settings-general"]
+    }
+  }
+}
