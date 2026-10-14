@@ -73,6 +73,12 @@ window.__ModuleLoader__.load({
       '[data-dsh-layout="mobile"] .VOzbGW_content{flex:1 1 0;min-height:0}',
       '[data-dsh-layout="mobile"] .VOzbGW_options{padding:0 16px 24px}',
       '[data-dsh-layout="mobile"] .VOzbGW_header{padding:16px 14px 8px 10px}',
+      // Sidebar rail: the workspace browser root grows to fill the column and
+      // pushes the bottom-pinned Settings seat down. In the collapsed rail we
+      // stop it from growing so Settings sits right under Search. Only the rail
+      // (root + rail modifier together) is touched; the expanded sidebar keeps
+      // its scrolling session list.
+      '[data-dsh-layout="mobile"] .bhn1Oq_root.bhn1Oq_rail{flex:0 0 auto}',
     ].join('\n');
 
     return {
