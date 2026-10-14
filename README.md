@@ -1,6 +1,6 @@
 # dsh-mobile-ui
 
-DeepSeek Harness (dsh) Web UI 的移动端界面插件。
+DeepSeek Harness (dsh) Web UI 的移动端界面插件。由deepseek v4.1flash倾情打造
 
 ## 功能
 
